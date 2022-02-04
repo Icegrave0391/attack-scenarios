@@ -2,8 +2,6 @@
 
 A DEMO for misconfiguration-based ftp data leak attack.
 
-## Config 
-
 The malicious ftp configuration file allows users to access certain directory `/home/chuqi/web-sources`, which contains sensitive data.
 
 ## Download
