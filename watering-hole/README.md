@@ -6,9 +6,11 @@ After execution, `mal-package` copies sensitive files from the victim's original
 
 Finally, the attacker steals those files by connecting and requesting to victim's server.
 
-### Similar
+### Similar scenario
 
+[Rain: Refinable Attack Investigation with On-demand Inter-Process Information Flow Tracking](https://iisp.gatech.edu/sites/default/files/images/rain.pdf)
 
+In their motivating example, the attacker compromised a distribution site of an firefox extension *FireFTP*, the original extension has been replaced with a malicious one.
 
 ## Implementation
 
