@@ -4,7 +4,7 @@ The victim user tries to download a series of packages for his environment via `
 
 After execution, `mal-package` copies sensitive files from the victim's original directory to a shared folder, which provides web sources for the shared nginx server on victim's PC.
 
-Finally, the attack steals those files by connecting and requesting to victim's server.
+Finally, the attacker steals those files by connecting and requesting to victim's server.
 
 ### Similar
 
