@@ -1,0 +1,1 @@
+This is ftp_file3 content.
