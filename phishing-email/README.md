@@ -26,7 +26,7 @@ The phishing email contains a link to the camouflaged FTP server.
 
 Ubuntu 16.04: http://mirror.nus.edu.sg/ubuntu-ISO/16.04/    
 sendmail 8.15.2: installed from apt-get    
-procmail 3.22: In this github directory    
+procmail 3.22: https://github.com/Icegrave0391/attack-scenarios/releases/download/procmail-3.22/procmail-3.22.tar.gz    
 mutt 2.1.5: http://ftp.mutt.org/pub/mutt/mutt-2.1.5.tar.gz    
 
 ### Deploy
