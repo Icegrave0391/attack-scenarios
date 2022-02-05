@@ -1,0 +1,1 @@
+"|IFS=' '&&exec /usr/local/procmail/bin/procmail -f-||exit 75 #username"
