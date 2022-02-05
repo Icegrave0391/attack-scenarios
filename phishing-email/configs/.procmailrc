@@ -1,0 +1,6 @@
+PATH=/usr/sbin:/usr/bin
+MAILDIR=$HOME/Mail
+
+:0
+*.*
+$MAILDIR/new
