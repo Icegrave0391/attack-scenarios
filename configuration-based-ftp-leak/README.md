@@ -45,7 +45,7 @@ cp ftp-source-root /home/chuqi
 sudo /home/chuqi/local/proftpd/sbin/proftpd -c /path/to/configure/file
 ```
 
-**Operations (Victim IP1)**
+### Operations (Victim IP1)
 
 1. Download different configuration files (including the defective configuration file) via curl
 
@@ -59,7 +59,7 @@ sudo /home/chuqi/local/proftpd/sbin/proftpd -c /path/to/configure/file
 sudo /home/chuqi/local/proftpd/sbin/proftpd -c mal-proftpd.conf
 ```
 
-**Exploit (Attacker IP2)**    
+### Exploit (Attacker IP2)
 
 Access victim's FTP server and transfer files:
 ```
