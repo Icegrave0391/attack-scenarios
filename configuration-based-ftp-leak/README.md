@@ -20,6 +20,28 @@ proftpd 1.3.6: https://github.com/proftpd/proftpd/archive/refs/tags/v1.3.6b.tar.
 
 ### Deploy
 
+**curl tool (Victim IP1)**
+```
+cd curl-7.44.0
+./configure --prefix=/home/chuqi/local/curl \
+--disable-ftp \
+--disable-pop3 \
+--disable-smtp \
+--disable-imap \
+--disable-gopher \
+--disable-imap \
+--disable-ldap \
+--disable-ldaps \
+--disable-proxy \
+--disable-rtsp \
+--disable-telnet \
+--disable-tftp \
+--disable-dict \
+--without-libcurl \
+--disable-shared \
+--disable-libcurl-option
+```
+
 **FTP server (Victim IP1)**
 
 * build and install

@@ -33,7 +33,7 @@ mutt 2.1.5: http://ftp.mutt.org/pub/mutt/mutt-2.1.5.tar.gz
 
 **hostname** (Victim IP1)
 
-First edit the `/etc/hosts` file to edit the hostname of the victim.
+Firstly, edit the `/etc/hosts` file to edit the hostname of the victim.
 
 ```
 127.0.0.1 localhost
@@ -43,7 +43,7 @@ First edit the `/etc/hosts` file to edit the hostname of the victim.
 
 **sendmail & procmail (Victim IP1)**
 
-* build and install
+* building and install
 ```
 # sendmail
 # use the site.config.m4 from this github repo as the m4 configure file
@@ -81,6 +81,15 @@ mv .forward /home/chuqi/.forward
 mv .procmailrc /home/chuqi/.procmailrc
 ```
 
+It's likely to encounter some problems during the compilation and installation of `sendmail`. Here are some relevant discussions helpful to resolve compile-related problems.
+```
+https://groups.google.com/g/comp.mail.sendmail/c/wrDcIzYq5VM
+http://www.jojees.com/resources/how-tos/sendmail/installation#TOC-domain.o:-In-function-dns_getcanonname-
+https://www.linuxquestions.org/questions/slackware-14/can%27t-build-sendmail-v8-13-4-with-starttls-support-on-slack-10-1-a-329600/
+https://www.linuxquestions.org/questions/linux-software-2/sendmail-build-problem-91353/
+http://www.verycomputer.com/4_82173b8e3b1ccc20_1.htm
+```
+
 **mutt (Victim IP1)**
 
 ```
@@ -90,7 +99,7 @@ sudo make && make install
 
 ### Operations 
 
-The victim just needs to activate sendmail daemon.
+The victim only needs to activate sendmail daemon.
 ```
 sudo sendmail -bd
 ```
