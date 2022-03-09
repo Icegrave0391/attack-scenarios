@@ -46,7 +46,12 @@ First edit the `/etc/hosts` file to edit the hostname of the victim.
 * build and install
 ```
 # sendmail
-sudo apt install sendmail
+# use the site.config.m4 from this github repo as the m4 configure file
+mv phishing-email/devtools/Site/site.config.m4 sendmail-8.15.2/devtools/Site/site.config.m4
+cd sendmail-8.15.2
+./Build -c     # compile and generate the OS-dependent object files
+# install (as /usr/sbin/sendmail)
+cd sendmail && ./Build install
 
 # procmail
 # note that the 
