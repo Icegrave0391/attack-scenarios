@@ -39,3 +39,98 @@ cd yafc-1.3.7
 ./configure --prefix=/home/chuqi/local/yafc
 make && make install
 ```
+
+- usage 
+```
+export myyafc = /home/chuqi/local/yafc/bin/yafc
+$myyafc chuqi:chuqi@172.26.187.140:9121           # use pure-ftpd to start the server 
+```
+
+### memcached
+
+- download from the [stable release](https://memcached.org/)
+```
+wget http://www.memcached.org/files/memcached-1.6.14.tar.gz
+tar xzvf memcached-1.6.14.tar.gz
+cd memcached-1.6.14
+```
+
+- install
+```
+./configure --prefix=/home/chuqi/local/memcached
+make && make install
+```
+
+- usage
+```
+export mymemcached=/home/chuqi/local/memcached/bin/memcached
+$mymemcached -p <port num> -d
+```
+
+### Squid
+
+- download from the [stable release](http://www.squid-cache.org/Versions/)
+```
+wget http://www.squid-cache.org/Versions/v5/squid-5.4.1.tar.gz
+tar xzvf squid-5.4.1.tar.gz
+cd squid-5.4.1
+```
+
+- install
+```
+./configure --prefix=/home/chuqi/local/squid
+make && make install
+```
+
+### Varnish
+
+- download from the [stable release]()
+```
+wget https://varnish-cache.org/downloads/varnish-7.0.0.tgz
+tar xzvf varnish-7.0.0.tgz
+cd varnish-7.0.0
+```
+
+- install
+
+There is an official document for [compiling varnish from source](https://varnish-cache.org/docs/trunk/installation/install_source.html).
+
+```
+sudo apt-get install python-docutils
+```
+
+### Postgresql
+
+- download from the [stable release](https://www.postgresql.org/ftp/source/)
+```
+wget https://ftp.postgresql.org/pub/source/v14.0/postgresql-14.0.tar.gz
+tar xzvf ...
+```
+
+- install
+
+There is an official document of the [installation procedure](https://www.postgresql.org/docs/14/install-procedure.html).
+
+```
+./configure --prefix=/home/chuqi/local/postgresql
+make && make install
+```
+
+
+### ntpd
+
+- download from the [stable release](http://www.ntp.org/downloads.html)
+```
+wget http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
+tar xzvf ntp-4.2.8p15.tar.gz
+cd ntp-4.2.8p15
+```
+
+- install
+
+There is an official document for [building and installing the distribution](https://www.eecis.udel.edu/~mills/ntp/html/build.html).
+
+```
+./configure --prefix=/home/chuqi/local/ntp
+make && make install
+```
