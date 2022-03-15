@@ -116,6 +116,42 @@ There is an official document of the [installation procedure](https://www.postgr
 make && make install
 ```
 
+- usage
+
+Follow the [official documentation](https://www.postgresql.org/docs/14/index.html) when operating the database.
+
+Note that `postgresql` has been installed at the root directory `/home/chuqi/local/postgresql`.
+
+```
+# set the locale settings 
+export LC_ALL="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+
+cd /home/chuqi/local/postgresql/bin
+
+# initialize the data base file system
+./initdb -D /home/chuqi/local/postgresql/data
+
+# modify the configuration
+cd /home/chuqi/local/postgresql/data && vim postgresql.conf # modify the listen port and address
+
+# start service 
+./postgres -D /home/chuqi/local/postgresql/data                   # foreground mode
+./postgres -D /home/chuqi/local/postgresql/data > logfile 2>&1 &  # background mode
+
+# create database for user chuqi 
+./createdb chuqi 
+```
+```
+# client interaction
+./psql -U <userName> <dbName>
+
+# create user 
+> CREATE ROLE username superuser; # create ROLE
+> CREATE USER username;           # create USER
+> GRANT ROOT TO username;         # assign privilege
+> ALTER ROLE username WITH LOGIN; # enable login
+```
 
 ### ntpd
 
@@ -134,3 +170,4 @@ There is an official document for [building and installing the distribution](htt
 ./configure --prefix=/home/chuqi/local/ntp
 make && make install
 ```
+
