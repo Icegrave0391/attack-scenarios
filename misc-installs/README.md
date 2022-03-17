@@ -182,7 +182,8 @@ cd ntp-4.2.8p15
 There is an official document for [building and installing the distribution](https://www.eecis.udel.edu/~mills/ntp/html/build.html).
 
 ```
-./configure --prefix=/home/chuqi/local/ntp
+CFLAGS='-no-pie' CPPFLAGS='-no-pie' LDFLAGS='-no-pie' ./configure --prefix=/home/chuqi/local/ntp
+vim makefile and comments all -pie / -fPIE
 make && make install
 ```
 
