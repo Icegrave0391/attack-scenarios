@@ -139,9 +139,10 @@ cd /home/chuqi/local/postgresql/data && vim postgresql.conf # modify the listen 
 ./postgres -D /home/chuqi/local/postgresql/data                   # foreground mode
 ./postgres -D /home/chuqi/local/postgresql/data > logfile 2>&1 &  # background mode
 
-# create database for user chuqi 
-./createdb chuqi 
+# create database named evaldb
+./createdb evaldb
 ```
+
 ```
 # client interaction
 ./psql -U <userName> <dbName>
@@ -151,7 +152,21 @@ cd /home/chuqi/local/postgresql/data && vim postgresql.conf # modify the listen 
 > CREATE USER username;           # create USER
 > GRANT ROOT TO username;         # assign privilege
 > ALTER ROLE username WITH LOGIN; # enable login
+
+# create table
+CREATE TABLE userinfo (
+    name    char(20),
+    uid     int
+);
+
+# insert data
+INSERT INTO userinfo VALUES ('user3', 003);
+
+# query for data
+SELECT * FROM userinfo WHERE uid=1;
 ```
+
+
 
 ### ntpd
 
@@ -171,3 +186,15 @@ There is an official document for [building and installing the distribution](htt
 make && make install
 ```
 
+- usage
+
+1. server side 
+
+deploy the ntpd server
+```
+# create configuration file at /home/chuqi/local/ntp/etc
+mkdir /home/chuqi/local/ntp/etc
+# download the ntp.conf from this github repo page to the file
+
+
+```
