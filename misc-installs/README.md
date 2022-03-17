@@ -195,6 +195,16 @@ deploy the ntpd server
 # create configuration file at /home/chuqi/local/ntp/etc
 mkdir /home/chuqi/local/ntp/etc
 # download the ntp.conf from this github repo page to the file
+wget https://raw.githubusercontent.com/Icegrave0391/attack-scenarios/main/misc-installs/ntp.conf
 
+# start ntpd server
+sudo /home/chuqi/local/ntp/bin/ntpd -c /home/chuqi/local/ntp/etc/ntp.conf
+```
+
+2. client side 
+
+download ntp and ntpdate via apt
+```
+sudo apt install ntp ntpdate
 
 ```
