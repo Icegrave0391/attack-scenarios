@@ -195,7 +195,8 @@ deploy the ntpd server
 # create configuration file at /home/chuqi/local/ntp/etc
 mkdir /home/chuqi/local/ntp/etc
 # download the ntp.conf from this github repo page to the file
-wget https://raw.githubusercontent.com/Icegrave0391/attack-scenarios/main/misc-installs/ntp.conf
+cd /home/chuqi/local/ntp/etc
+curl -o ntp.conf https://raw.githubusercontent.com/Icegrave0391/attack-scenarios/main/misc-installs/ntp_server.conf
 
 # start ntpd server
 sudo /home/chuqi/local/ntp/bin/ntpd -c /home/chuqi/local/ntp/etc/ntp.conf
@@ -207,4 +208,11 @@ download ntp and ntpdate via apt
 ```
 sudo apt install ntp ntpdate
 
+# download the ntp_client.conf from this github repo page to the file 
+sudo curl -o /etc/ntp.conf https://raw.githubusercontent.com/Icegrave0391/attack-scenarios/main/misc-installs/ntp_client.conf
+```
+update ntp with the server:
+
+```
+ntpdate -d -u 172.26.187.140 (server IP)
 ```
