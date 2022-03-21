@@ -118,6 +118,23 @@ There is an official document for [compiling varnish from source](https://varnis
 sudo apt-get install python-docutils
 ```
 
+- usage
+```
+# 1. create a cache file directory 
+mkdir /home/chuqi/local/varnish/cachefiles
+
+# 2. create a VCL configuration file 
+mkdir /home/chuqi/local/varnish/etc 
+cd /home/chuqi/local/varnish/etc
+curl -o default.vcl https://raw.githubusercontent.com/Icegrave0391/attack-scenarios/main/misc-installs/default.vcl
+
+# 3. turn on http server, which listens on port 8580 (configured as backend section in default.vcl)
+
+# 4. start varnish
+cd /home/chuqi/local/varnish/sbin
+sudo ./varnishd -a 172.26.187.140:11080 -f /home/chuqi/local/varnish/etc/default.vcl -s file,/home/chuqi/local/varnish/cachefiles/cache.file,100m  -n /home/chuqi/local/varnish/sbin/
+```
+
 ### Postgresql
 
 - download from the [stable release](https://www.postgresql.org/ftp/source/)
