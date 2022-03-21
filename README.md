@@ -1,1 +1,1 @@
-demos for different attack scenario.
+Demos for different attack scenarios @ evaluation part of *Palantiri*.
