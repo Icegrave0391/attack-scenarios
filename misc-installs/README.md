@@ -18,12 +18,31 @@ sudo make && make install
 - download from the [stable release](https://www.haproxy.org/)
 
 ```
-wget https://www.haproxy.org/download/2.5/src/haproxy-2.5.4.tar.gz
-tar xzvf haproxy-2.5.4.tar.gz
-cd haproxy-2.5.4
+wget https://www.haproxy.org/download/1.8/src/haproxy-1.8.30.tar.gz
+tar xzvf haproxy-1.8.30.tar.gz
+cd haproxy-1.8.30
 ```
 
 - install
+```
+1. edit the PREFIX in makefile (PREFIX=/home/chuqi/local/haproxy)
+make TARGET=linux2628 USE_ZLIB=1 USE_PCRE=1 && make install
+```
+
+- usage
+```
+# download config file on server side
+cd /home/chuqi/local/haproxy
+mkdir etc && cd etc
+curl -o haproxy.cfg https://raw.githubusercontent.com/Icegrave0391/attack-scenarios/main/misc-installs/haproxy.cfg
+
+# deploy load-balance server
+/home/chuqi/local/haproxy/sbin/haproxy -D -f /home/chuqi/local/haproxy/etc/haproxy.cfg
+
+# now could access haproxy with localhost:10080
+# i.e. :
+curl 127.0.0.1:10080/data/file2.txt (the url path should follow the deployed web server)
+```
 
 ### yafc 
 
