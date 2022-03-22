@@ -202,7 +202,42 @@ INSERT INTO userinfo VALUES ('user3', 003);
 SELECT * FROM userinfo WHERE uid=1;
 ```
 
+### SQLite
 
+- download from the [stable release](https://sqlite.org/download.html)
+```
+wget https://sqlite.org/2022/sqlite-autoconf-3380100.tar.gz
+tar xzvf sqlite-autoconf-3380100.tar.gz
+cd sqlite-autoconf-3380100
+```
+
+- install
+```
+./configure --prefix=/home/chuqi/local/sqlite
+make && make install
+```
+
+- usage
+```
+SQLite is a lightweight serverless database front-end, which interacts and queries with local file data base.
+SQLite3 is a terminal-based front-end to the SQLite library that can evaluate queries interactively and display the results in multiple formats. SQLite3 can also be used within shell scripts and other applications to provide batch processing  features.
+
+# 1. initialize database 
+cd /home/chuqi/local/sqlite/bin
+$ ./sqlite3 eval.db
+    SQLite version SQLite version 3.38.1 2022-03-12 13:37:29
+    Enter ".help" for instructions
+    sqlite> create table users(uname, uid INTEGER);
+    sqlite> insert into users values('chuqi', 11);
+    sqlite> insert into users values('jun', 111);
+    sqlite> select * from users;
+        chuqi|11
+        jun|111
+    sqlite> ctrl ^ C 
+
+# 2. interact with db at line mode
+$ ./sqlite3 -line eval.db "select * from users;"
+```
 
 ### ntpd
 
