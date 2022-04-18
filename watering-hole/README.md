@@ -85,6 +85,7 @@ wget https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb
         https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg19 \
         https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg20 \
 
+chmod 777 install.sh
 ./install.sh
 ```
 2. Execute malicious `util.sh`
