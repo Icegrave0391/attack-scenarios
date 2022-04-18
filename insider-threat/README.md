@@ -66,7 +66,7 @@ Use the command shown in section deploy.
 1. Copy sensitive files to the shared lighttpd folder
 
 ```
-/home/chuqi/local/coreutils/bin/cp src dst
+/home/chuqi/local/coreutils/bin/cp /home/chuqi/secrets/* /home/chuqi/lighttpd-sources
 ```
 
 **Exploit (External IP2)**    
