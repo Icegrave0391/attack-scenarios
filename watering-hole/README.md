@@ -63,7 +63,7 @@ stop: /home/chuqi/local/nginx/sbin/nginx -s stop
 1. Download several packages via wget 
 ```
 wget https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/install.sh \
-        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/util.deb\
+       https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/util.deb \
         https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg1 \
         https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg2 \
         https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg3 \
