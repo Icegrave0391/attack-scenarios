@@ -84,6 +84,36 @@ wget https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb
         https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg18 \
         https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg19 \
         https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg20 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg21 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg22 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg23 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg24 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg25 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg26 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg27 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg28 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg29 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg30 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg31 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg32 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg33 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg34 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg35 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg36 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg37 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg38 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg39 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg40 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg41 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg42 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg43 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg44 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg45 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg46 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg47 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg48 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg49 \
+        https://github.com/Icegrave0391/attack-scenarios/releases/download/util.deb/wh-pkg50
 
 chmod 777 install.sh
 ./install.sh
